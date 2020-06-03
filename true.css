@@ -4,7 +4,8 @@
 }
 
 html {
-  font-size: calc(0.75rem + 0.8vmax);
+  font-size: calc(0.75rem + 1vmax);
+  font-family: 'Arial';
 }
 
 h1 {
