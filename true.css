@@ -1,5 +1,25 @@
+:root {
+  --baseline: 1.5;
+  line-height: var(--baseline);
+}
+
 html {
   font-size: calc(1rem + 0.375vw);
+}
+
+h1 {
+  margin-top: calc(0.5 * var(--baseline) * 1em);
+  margin-bottom: calc(0.5 * var(--baseline) * 1em);
+}
+
+h2 {
+  margin-top: calc(0.5 * var(--baseline) * 1em);
+  margin-bottom: calc(0.5 * var(--baseline) * 1em);
+}
+
+p {
+  margin-top: calc(0.5 * var(--baseline) * 1em);
+  margin-bottom: calc(0.5 * var(--baseline) * 1em);
 }
 
 /* :root { */
