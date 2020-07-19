@@ -1,19 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./normalize.css">
+  <!-- <link rel="stylesheet" href="./normalize.css"> -->
   <link rel="stylesheet" href="./true.css">
   <title>true.css</title>
 </head>
-<body>
-  <h1>true.css - modern default html</h1>
 
-  <div>
-    <h2>Responsive typography</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est velit delectus doloribus natus eaque quibusdam explicabo dolor quaerat architecto temporibus excepturi asperiores nostrum, non dolores ad eveniet? Quisquam, vitae deleniti? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor at repellendus architecto facere, nihil accusamus repellat? Ut sunt dolores nam velit, quibusdam quae laboriosam! Maxime temporibus dolore praesentium quis delectus?</p>
-  </div>
+<body style="margin: 0 1em;">
+  <section>
+    <h1>Responsive typography</h1>
+    <p>Lorem <span>ipsum dolor</span> sit amet consectetur adipisicing elit. Est velit delectus doloribus natus eaque
+      quibusdam explicabo dolor quaerat architecto temporibus excepturi asperiores nostrum, non dolores ad eveniet?
+      Quisquam, vitae deleniti? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor at repellendus
+      architecto facere, nihil accusamus repellat? Ut sunt dolores nam velit, quibusdam quae laboriosam! Maxime
+      temporibus dolore praesentium quis delectus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est velit delectus doloribus natus eaque quibusdam
+      explicabo dolor quaerat architecto temporibus excepturi asperiores nostrum, non dolores ad eveniet? Quisquam,
+      vitae deleniti? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor at repellendus architecto facere,
+      nihil accusamus repellat? Ut sunt dolores nam velit, quibusdam quae laboriosam! Maxime temporibus dolore
+      praesentium quis delectus?</p>
+    <h2>Second heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est velit delectus doloribus natus eaque quibusdam
+      explicabo dolor quaerat architecto temporibus excepturi asperiores nostrum, non dolores ad eveniet? Quisquam,
+      vitae deleniti? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor at repellendus architecto facere,
+      nihil accusamus repellat? Ut sunt dolores nam velit, quibusdam quae laboriosam! Maxime temporibus dolore
+      praesentium quis delectus?</p>
+    <h3>Third heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est velit delectus doloribus natus eaque quibusdam
+      explicabo dolor quaerat architecto temporibus excepturi asperiores nostrum, non dolores ad eveniet? Quisquam,
+      vitae deleniti? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor at repellendus architecto facere,
+      nihil accusamus repellat? Ut sunt dolores nam velit, quibusdam quae laboriosam! Maxime temporibus dolore
+      praesentium quis delectus?</p>
+    <h4>Fourth heading</h4>
+    <p>This is text</p>
+    <h5>Fifth heading</h5>
+    <p>This is text 2</p>
+    <h6>Sixth heading</h6>
+    <p>This is text 3</p>
+  </section>
+
+  <br/>
+  
+  <section>
+    <h1>Card</h1>
+    <ul data-card style="width: 300px;">
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+      <li>item5</li>
+    </ul>
+  </section>
+
+  <br/>
+  
+  <section>
+    <h1>Links</h1>
+    <a href="#">Simple link</a>
+    <p><a href="#sd">Text link</a></p>
+    <a href="#"><img src="https://via.placeholder.com/80x80" alt="link"></a>
+  </section>
+
+  <br/>
+  
+  <section>
+    <h1>Buttons</h1>
+    <button>Button</button>
+    <button>Loooooong button</button>
+    <button disabled>Disabled</button>
+  </section>
+
+  <br/>
+  
+  <section>
+    <h1>Form inputs</h1>
+    <div data-card>
+      <form style="--layout: '.'">
+        <div data-grid>
+          <label for="login">Login</label>
+          <input type="text" id="login" name="login" required>
+        </div>
+
+        <div data-grid>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+        </div>
+
+        <div data-grid>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <div data-grid>
+          <label for="file">File</label>
+          <input type="file" id="file" name="file">
+        </div>
+
+        <div data-grid>
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age">
+        </div>
+
+        <div data-grid>
+          <label for="range">Range</label>
+          <input type="range" id="range" name="range">
+        </div>
+
+        <div data-grid>
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date">
+        </div>
+
+        <div data-grid>
+          <label for="city">City</label>
+          <select name="city" id="city">
+            <option value="1">city #1</option>
+            <option value="2">city #2</option>
+            <option value="3">city #3</option>
+            <option value="4">city #4</option>
+          </select>
+        </div>
+
+        <div data-grid>
+          <label for="msg">Message</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+
+        <div>
+          <label for="remember-me">Remember me</label>
+          <input type="checkbox" name="isRememberMe" id="remember-me">
+        </div>
+
+        <fieldset>
+          <legend>Sex</legend>
+          <label for="male">Male</label>
+          <input type="radio" name="sex" id="male">
+          <label for="female">Female</label>
+          <input type="radio" name="sex" id="female">
+        </fieldset>
+
+        <div style="margin-top: 1em;">
+          <button type="submit">Sign in</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+  <br/>
+  
+  <section>
+    <h1>Grid</h1>
+    <div data-grid style="grid-gap: 1.5em">
+      <div>
+        <h2>Title 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing <a href="#">Text link</a> elit. Blanditiis labore
+          perferendis neque laboriosam autem quos ipsum quia est molestiae, a modi libero officia voluptatem at eligendi,
+          quis molestias, nihil recusandae.</p>
+        <button style="margin-top: 1em">Click me</button>
+      </div>
+      <div>
+        <h2>Title 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reprehenderit ipsam voluptate, odio maiores
+          officia nesciunt doloremque consequuntur fugit, perferendis porro totam enim cum molestias dolor voluptatibus
+          iure atque hic?</p>
+      </div>
+      <div data-card>
+        <h2>Title 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse maxime a blanditiis nemo illum quae facilis.
+          Modi optio, harum accusamus quisquam odio provident quod debitis, aliquid natus placeat nisi.</p>
+      </div>
+      <div>
+        <h2>Title 4</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse maxime a blanditiis nemo illum quae facilis.
+          Modi optio, harum accusamus quisquam odio provident quod debitis, aliquid natus placeat nisi.</p>
+      </div>
+      <div>
+        <h2>Title 5</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse maxime a blanditiis nemo illum quae facilis.
+          Modi optio, harum accusamus quisquam odio provident quod debitis, aliquid natus placeat nisi.</p>
+      </div>
+      <div>
+        <h2>Title 6</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse maxime a blanditiis nemo illum quae facilis.
+          Modi optio, harum accusamus quisquam odio provident quod debitis, aliquid natus placeat nisi.</p>
+      </div>
+      <div>
+        <h2>Title 7</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse maxime a blanditiis nemo illum quae facilis.
+          Modi optio, harum accusamus quisquam odio provident quod debitis, aliquid natus placeat nisi.</p>
+      </div>
+      <div>
+        <h2>Title 8</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse maxime a blanditiis nemo illum quae facilis.
+          Modi optio, harum accusamus quisquam odio provident quod debitis, aliquid natus placeat nisi.</p>
+      </div>
+      <div>
+        <h2>Title 9</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse maxime a blanditiis nemo illum quae facilis.
+          Modi optio, harum accusamus quisquam odio provident quod debitis, aliquid natus placeat nisi.</p>
+      </div>
+      <div>
+        <h2>Title 10</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse maxime a blanditiis nemo illum quae facilis.
+          Modi optio, harum accusamus quisquam odio provident quod debitis, aliquid natus placeat nisi.</p>
+      </div>
+      <div>
+        <h2>Title 11</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse maxime a blanditiis nemo illum quae facilis.
+          Modi optio, harum accusamus quisquam odio provident quod debitis, aliquid natus placeat nisi.</p>
+      </div>
+      <div>
+        <h2>Title 12</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse maxime a blanditiis nemo illum quae facilis.
+          Modi optio, harum accusamus quisquam odio provident quod debitis, aliquid natus placeat nisi.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="overflow: auto;">
+    <h1>Table</h1>
+    <table>
+      <thead>
+        <tr>
+          <th style="min-width: 250px">Col 1</th>
+          <th style="min-width: 300px">Col 2</th>
+          <th style="min-width: 250px">Col 3</th>
+          <th style="min-width: 400px">Col 4</th>
+          <th style="min-width: 500px">Col 5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Item 11</td>
+          <td>Item 12</td>
+          <td>Item 13Item13 Item 13Item13 Item 13Item13</td>
+          <td>Item 14</td>
+          <td>Item 14</td>
+        </tr>
+        <tr>
+          <td>Item 21</td>
+          <td>Item 22</td>
+          <td>Item 23</td>
+          <td>Item 24</td>
+          <td>Item 24</td>
+        </tr>
+        <tr>
+          <td>Item 21</td>
+          <td>Item 22</td>
+          <td>Item 23</td>
+          <td>Item 24</td>
+          <td>Item 24</td>
+        </tr>
+        <tr>
+          <td>Item 21</td>
+          <td>Item 22</td>
+          <td>Item 23</td>
+          <td>Item 24</td>
+          <td>Item 24</td>
+        </tr>
+        <tr>
+          <td>Item 21</td>
+          <td>Item 22</td>
+          <td>Item 23</td>
+          <td>Item 24</td>
+          <td>Item 24</td>
+        </tr>
+        <tr>
+          <td>Item 21</td>
+          <td>Item 22</td>
+          <td>Item 23</td>
+          <td>Item 24</td>
+          <td>Item 24</td>
+        </tr>
+        <tr>
+          <td>Item 21</td>
+          <td>Item 22</td>
+          <td>Item 23</td>
+          <td>Item 24</td>
+          <td>Item 24</td>
+        </tr>
+        <tr>
+          <td>Item 21</td>
+          <td>Item 22</td>
+          <td>Item 23</td>
+          <td>Item 24</td>
+          <td>Item 24</td>
+        </tr>
+        <tr>
+          <td>Item 21</td>
+          <td>Item 22</td>
+          <td>Item 23</td>
+          <td>Item 24</td>
+          <td>Item 24</td>
+        </tr>
+        <tr>
+          <td>Item 21</td>
+          <td>Item 22</td>
+          <td>Item 23</td>
+          <td>Item 24</td>
+          <td>Item 24</td>
+        </tr>
+        <tr>
+          <td>Item 21</td>
+          <td>Item 22</td>
+          <td>Item 23</td>
+          <td>Item 24</td>
+          <td>Item 24</td>
+        </tr>
+        <tr>
+          <td>Item 21</td>
+          <td>Item 22</td>
+          <td>Item 23</td>
+          <td>Item 24</td>
+          <td>Item 24</td>
+        </tr>
+        <tr>
+          <td>Item 21</td>
+          <td>Item 22</td>
+          <td>Item 23</td>
+          <td>Item 24</td>
+          <td>Item 24</td>
+        </tr>
+        <tr>
+          <td>Item 21</td>
+          <td>Item 22</td>
+          <td>Item 23</td>
+          <td>Item 24</td>
+          <td>Item 24</td>
+        </tr>
+        <tr>
+          <td>Item 21</td>
+          <td>Item 22</td>
+          <td>Item 23</td>
+          <td>Item 24</td>
+          <td>Item 24</td>
+        </tr>
+        <tr>
+          <td>Item 21</td>
+          <td>Item 22</td>
+          <td>Item 23</td>
+          <td>Item 24</td>
+          <td>Item 24</td>
+        </tr>
+        <tr>
+          <td>Item 21</td>
+          <td>Item 22</td>
+          <td>Item 23</td>
+          <td>Item 24</td>
+          <td>Item 24</td>
+        </tr>
+      </tbody>
+      <tfoot>
+      </tfoot>
+    </table>
+  </section>
 </body>
+
 </html>
