@@ -31,15 +31,6 @@
   background-color: inherit;
 }
 
-button:not([disabled]):hover,
-input[type="range"]:not([disabled]):hover,
-select:not([disabled]):hover,
-label[for]:hover,
-input[type="checkbox"]:not([disabled]):hover,
-input[type="radio"]:not([disabled]):hover {
-  cursor: pointer;
-}
-
 
 /* reset margin and padding */
 body,
@@ -118,7 +109,7 @@ ul {
   font-size: 1rem;
   border-radius: 1rem;
   background-color: var(--primary-color);
-  padding: 1.25em 1.5em;
+  padding: 1em;
 }
 
 
@@ -167,6 +158,19 @@ textarea {
   font-family: inherit;
   padding: 0;
   margin: 0;
+}
+
+button:not([disabled]):hover,
+input[type="range"]:not([disabled]):hover,
+select:not([disabled]):hover,
+label[for]:hover,
+input[type="checkbox"]:not([disabled]):hover,
+input[type="radio"]:not([disabled]):hover {
+  cursor: pointer;
+}
+
+input[type="file"] {
+  width: 100%;
 }
 
 button,
