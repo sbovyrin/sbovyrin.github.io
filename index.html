@@ -11,6 +11,8 @@
 </head>
 
 <body style="margin: 0 1em;">
+  <button id="font-fix">Font fix</button>
+  <button id="font-var">Font var</button>
   <section>
     <h1>Responsive typography</h1>
     <p>Lorem <span>ipsum dolor</span> sit amet consectetur adipisicing elit. Est velit delectus doloribus natus eaque
@@ -358,6 +360,20 @@
       </tfoot>
     </table>
   </section>
+
+  <script>
+    document.querySelector('#font-fix')
+      .addEventListener(
+        'click',
+        () => document.body.style.fontSize = '1rem'
+      )
+
+    document.querySelector('#font-var')
+      .addEventListener(
+        'click',
+        () => document.body.style.fontSize = 'calc(0.75rem + 1vmax)'
+      )
+  </script>
 </body>
 
 </html>
