@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "product_id": 1,
+        "name": "Russian caviar house",
+        "description": "Lorem ipsum dolor sit amet, id mel argumentum temporibus, tempor salutatus vis ad",
+        "price": 100,
+        "stock": 23,
+        "weight": "50 gr"
+    },
+    {
+        "id": 2,
+        "product_id": 1,
+        "name": "Russian caviar house",
+        "description": "Lorem ipsum dolor sit amet, id mel argumentum temporibus, tempor salutatus vis ad",
+        "price": 150,
+        "stock": 12,
+        "weight": "100 gr"
+    },
+    {
+        "id": 3,
+        "product_id": 2,
+        "name": "Ars Italica",
+        "description": "Lorem ipsum dolor sit amet, id mel argumentum temporibus, tempor salutatus vis ad",
+        "price": 300,
+        "stock": 5,
+        "weight": "200 gr"
+    }
+]
